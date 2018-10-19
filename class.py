@@ -21,7 +21,8 @@ class SubClass(SampleClass):
         print('hello subclass' + keyword + self.exclamation)
 
 test = SampleClass('Apple')
-test.hello('Orange')
+# キーワード引数
+test.hello(keyword = 'Orange')
 
 test2 = SubClass('Tree')
 test.hello('Forest')

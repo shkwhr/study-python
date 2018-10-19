@@ -29,9 +29,9 @@ number = random.randint(1, 10)
 result_str = '大吉,吉,中吉,末吉,凶,大凶'
 result = result_str.split(',')
 result.append('超凶')   # 追加
-# result.pop(6)           # 削除
-# result.remove('超凶)
-del result[6]
+# result.pop(6)           # 削除(戻り値あり)
+# result.remove('超凶)      # 削除
+del result[6]               # 削除(del result[:] ってやると全削除(=.clear()))
 result[3] = '小吉'      # 変更
 
 output_all()

@@ -9,3 +9,7 @@ for (name, price) in item_dic.items():
 print('Price Only')
 for name in item_dic:
     print(str(item_dic[name]) + '円')
+else:
+    # forloopが終わったら出力
+    # breakした場合はelseは通らない
+    print('金額出力終了！')
